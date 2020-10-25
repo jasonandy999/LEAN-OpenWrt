@@ -31,7 +31,7 @@ env:
   REPO_BRANCH: lede-17.01
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: diy.config
-  DIY_OP_SH: diy-lede.sh
+  DIY_OP_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
