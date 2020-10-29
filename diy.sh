@@ -35,6 +35,7 @@ git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-adbyby-
 svn co https://github.com/jasonandy999/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/jasonandy999/openwrt-packages/trunk/luci-app-smartdns package/luci-app-smartdns
 svn co https://github.com/jasonandy999/openwrt-packages/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
+svn co https://github.com/jasonandy999/bf-package-master/trunk/lean/luci-app-accesscontrol #上网时间控制
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/brook package/brook
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/chinadns-ng package/chinadns-ng
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/tcping package/tcping
