@@ -9,7 +9,7 @@ sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 #sed -i "s/OpenWrt /20201025 build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # Add a feed source增加默认源地址
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/jasonandy999/openwrt-packages' feeds.conf.default
 
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i 's/OpenWrt/K2P/g' ./package/base-files/files/bin/config_generate
@@ -25,12 +25,15 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash  #openclash出国软件
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
+git clone https://github.com/jasonandy999/luci-app-adbyby-plus package/luci-app-adbyby-plus
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns package/luci-app-smartdns #smartdns DNS加速
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-ifit package/luci-theme-ifit
-svn co https://github.com/jasonandy999/diy-ziyong/trunk/luci-app-adguardhome package/luci-app-adguardhome
-svn co https://github.com/jasonandy999/diy-ziyong/trunk/luci-app-smartdns package/luci-app-smartdns #smartdns DNS加速
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-ifit package/luci-theme-ifit
+#svn co https://github.com/jasonandy999/diy-ziyong/trunk/luci-app-adguardhome package/luci-app-adguardhome
+svn co https://github.com/jasonandy999/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
+svn co https://github.com/jasonandy999/openwrt-packages/trunk/luci-app-smartdns package/luci-app-smartdns
+svn co https://github.com/jasonandy999/openwrt-packages/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/brook package/brook
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/chinadns-ng package/chinadns-ng
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/tcping package/tcping
