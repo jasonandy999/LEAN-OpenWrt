@@ -8,7 +8,7 @@ on:
     branches:
       - master
     paths:
-      - 'diy.sh'
+      - 'diy.config'
 
 
 #release发布触发开始编译(只是一个触发条件,不会发布的,又麻烦,没卵用,不用研究)
