@@ -26,6 +26,7 @@ git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
 git clone https://github.com/jasonandy999/luci-app-adbyby-plus package/luci-app-adbyby-plus
+git clone https://github.com/jasonandy999/luci-app-frpc package/luci-app-adbyby-plus
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns package/luci-app-smartdns #smartdns DNS加速
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
