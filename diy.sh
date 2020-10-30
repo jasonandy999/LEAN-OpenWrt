@@ -9,7 +9,7 @@ sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 #sed -i "s/OpenWrt /20201025 build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # Add a feed source增加默认源地址
-#sed -i '$a src-git kenzo https://github.com/jasonandy999/openwrt-packages' feeds.conf.default
+sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-package' feeds.conf.default
 
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i 's/OpenWrt/K2P/g' ./package/base-files/files/bin/config_generate
