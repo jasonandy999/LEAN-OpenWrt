@@ -37,8 +37,8 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 19.07
+  REPO_URL: https://github.com/coolsnowwolf/openwrt
+  REPO_BRANCH: lede-17.01
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: y1.config
   DIY_OP_SH: y1.sh
