@@ -67,12 +67,12 @@ jobs:
         df -hT $PWD
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-    - name: 加载diy-lede.sh跟feeds.conf.default设置
-      run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
-        chmod +x $DIY_OP_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_OP_SH
+#    - name: 加载diy-lede.sh跟feeds.conf.default设置
+#      run: |
+#        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
+#        chmod +x $DIY_OP_SH
+#        cd openwrt
+#        $GITHUB_WORKSPACE/$DIY_OP_SH
     - name: 下载diy-lede.sh跟feeds.conf.default自定义软件
       run: cd openwrt && ./scripts/feeds update -a
 
