@@ -1,6 +1,6 @@
 #!/bin/bash
 # 修改openwrt登陆地址,把下面的192.168.123.1修改成你想要的就可以了，其他的不要动
-sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 #取消掉feeds.conf.default文件里面的helloworld的#注释
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowSocksR Plus+出国软件
@@ -37,5 +37,5 @@ svn co https://github.com/xiaorouji/openwrt-package/trunk/package/tcping package
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-go package/trojan-go
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-plus package/trojan-plus
 
-rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
+#rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 
