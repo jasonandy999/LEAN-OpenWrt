@@ -27,11 +27,10 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
-  REPO_BRANCH: lede-17.01
-  FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: diy.config
-  DIY_OP_SH: diy.sh
+  REPO_URL: https://github.com/DreamWalkerXZ/lede
+  REPO_BRANCH: master
+  CONFIG_FILE: .config
+  DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
